@@ -44,12 +44,22 @@ FastFlow is a **flow-based anomaly detection method** that models the probabilit
    Samples with low likelihood are considered anomalous, and anomaly maps are generated to localize defective regions.
 
 This approach enables both **image-level anomaly detection** and **pixel-level defect localization**.
-
 The model is evaluated using **image-level AUROC**, which is suitable for anomaly detection as it is **threshold-independent**.
-
 FastFlow demonstrates strong performance on multiple MVTec AD categories and produces meaningful anomaly heatmaps for defect localization.
 
 ## Visualization
 
+### Anomaly Localization Example
+<img src="outputs/capsule/capsule1.png" width="700">
+<img src="outputs/capsule/capsule2.png" width="700">
+<img src="outputs/capsule/capsule3.png" width="700">
 
+### Image-level ROC Curve
+<img src="outputs/capsule/roc.png" width="500">
 
+## 🔗 References
+
+- FastFlow Paper: https://arxiv.org/abs/2111.07677
+- anomalib: https://github.com/openvinotoolkit/anomalib
+- FastFlow example: https://anomalib.readthedocs.io/en/latest/markdown/guides/reference/models/image/fastflow.html
+- MVTec AD Dataset: https://www.mvtec.com/company/research/datasets/mvtec-ad
